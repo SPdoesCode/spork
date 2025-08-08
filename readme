@@ -65,11 +65,17 @@ var enum name = {
     thing,
 }
 
+# A import like system
+
 -add[location](name)[prefix]
 -disable[location](name)[prefix]
 
+# kinda like the #define in c
+
 -define[thing](value)
 -undefine(thing)
+
+# if kinda stuff
 
 -ifdefined(thing)[optional value] {
 -
@@ -78,5 +84,21 @@ var enum name = {
 -ifndefined(thing)[optional value] {
 -
 -}
+
+# compile time if
+
+-if (expression) {
+-
+-}
+
+# disable and reenable stuff built in like if, func, etc
+
+-disablefeature(feature)
+-enablefeature(feature)
+
+# warnings or error during compile time
+
+-warning(warning)
+-error(error)
 
 # Compile time things are marked with a - .
