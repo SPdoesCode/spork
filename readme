@@ -1,0 +1,82 @@
+# commands/functions
+function[arg](args)[arg]
+
+# if statment
+if (expression) {
+
+} else if (expression) {
+
+} else {
+
+}
+
+# Comment
+
+-#
+
+    Multi-line comment.
+
+#-
+
+# The first [arg] and last [arg] can be only one variable of any datatype including nameof which gives the name of a variable.
+func (name of function)[arg](args)[arg] (return type) {
+
+    return(value);
+
+}
+# for loops
+for (expression) {
+    continue;
+    break;
+}
+# a switch statement
+switch (variable) {
+    case expression {
+
+    },
+}
+
+var name type = value
+-#
+Avilable datatypes:
+    string
+    char
+    int, uint
+    int64, uint64
+    int32, uint32
+    int16, uint16
+    int8, uint8
+    size, usize
+    any
+#-
+# Arrays can be like
+var names string[] = [ "harry", "howard" }
+# Maps are like
+var map(string user, int number) users = [
+    { user="User", number=1 },
+    { user="User", number=2 },
+]
+# structs are like
+var struct name = {
+    name: type
+}
+# Enums are like
+var enum name = {
+    thing,
+}
+
+-add[location](name)[prefix]
+-disable[location](name)[prefix]
+
+-define[thing](value)
+-undefine(thing)
+
+-ifdefined(thing)[optional value] {
+-
+-}
+
+-ifndefined(thing)[optional value] {
+-
+-}
+
+# Compile time things are marked with a - .
