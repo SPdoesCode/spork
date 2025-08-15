@@ -6,6 +6,6 @@ This is my new project, a simple c-like programming language. Here is some code 
 @include "std" : std;
 
 fun main[](string[] args) {
-  std.say("Hello world!\n");
+  std.println("Hello world!\n");
 }
 ```
