@@ -210,7 +210,6 @@ token_t tokenizer::num() {
         val += advance();
     }
 
-    // Could later parse float, hex, etc.
     return {tokentype_t::INT, bittype_t::NONE, val, startCol, (size_t)line};
 }
 
