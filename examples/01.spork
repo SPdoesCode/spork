@@ -1,0 +1,5 @@
+@include "./std" : std;
+
+fun main[int argc](string[] argv) {
+    std.println("Hello world!");
+}
