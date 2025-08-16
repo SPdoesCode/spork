@@ -206,10 +206,12 @@ token_t tokenizer::num() {
     std::string val;
     size_t startCol = row - 1;
 
+    val += source[start];
     while (std::isdigit(peek())) {
         val += advance();
     }
 
+    // Could later parse float, hex, etc.
     return {tokentype_t::INT, bittype_t::NONE, val, startCol, (size_t)line};
 }
 
